@@ -1,0 +1,13 @@
+{
+  "trained_at": "2026-04-16T20:36:50.602964",
+  "accuracy": 86.86,
+  "features": [
+    "total_funding_rounds",
+    "total_raised_usd",
+    "total_investors",
+    "startup_age",
+    "category_encoded",
+    "country_encoded"
+  ],
+  "n_estimators": 150
+}

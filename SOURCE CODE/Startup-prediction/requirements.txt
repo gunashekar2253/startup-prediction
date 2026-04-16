@@ -1,0 +1,14 @@
+flask
+flask-cors
+joblib
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+shap
+vaderSentiment
+requests
+schedule
+python-dotenv
+matplotlib
+seaborn

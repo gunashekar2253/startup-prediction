@@ -1,7 +1,7 @@
 # STARTUP SUCCESS PREDICTION SYSTEM
 ## Complete Project Documentation
 
-**Project Title:** AI-Powered Startup Success Prediction System with Ensemble Machine Learning, Explainable AI, and MLOps Automation
+**Project Title:** An efficient approach for prediction of start-up company success rates through machine learning paradigms
 
 **Technology Stack:** Python · Flask · React · SQLite · Scikit-learn · SHAP · VADER NLP · Vite
 

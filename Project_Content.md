@@ -1,8 +1,19 @@
 # ABSTRACT
 
-Startup ecosystems worldwide face a critical challenge: approximately 90% of startups fail within their first few years, resulting in massive financial losses for entrepreneurs, investors, and venture capitalists. Traditional evaluation methods rely heavily on subjective judgment by investors and manual analysis which is inherently biased and inconsistent. This project presents an AI-Powered Startup Success Prediction System that leverages ensemble machine learning, natural language processing, and explainable artificial intelligence to predict whether a startup will succeed or fail based on its financial, operational, and qualitative attributes.
-
-The system employs a dual-model ensemble architecture combining a Random Forest Classifier (achieving 86.86% accuracy) and a Multi-Layer Perceptron Neural Network (achieving 79.05% accuracy), trained on a dataset of 66,000+ real-world startups sourced from Crunchbase. SMOTE (Synthetic Minority Over-sampling Technique) is applied to handle class imbalance in the dataset. The predictions are enhanced by VADER-based NLP sentiment analysis of founder descriptions and explained through SHAP (SHapley Additive exPlanations) values for transparency. The platform includes an ETL data pipeline loading data into SQLite, a Flask REST API backend with six endpoints, a React dashboard with interactive visualizations, and an automated MLOps pipeline that fetches live data from three external APIs (Clearbit, NewsAPI, Yahoo Finance) and retrains the models every 12 hours.
+Start-up companies are crucial for economic growth and innovation, yet
+they face high failure rates due to various dynamic and uncertain factors.
+Predicting the success or failure of a start-up at an early stage can help
+stakeholders make informed investment and operational decisions.
+Traditional analytical methods often fail to account for complex, nonlinear
+relationships in entrepreneurial ecosystems. This study presents a novel
+and efficient machine learning-based approach to predict the success rate
+of start-ups using historical and real-time business data. By leveraging
+classification and regression algorithms, including ensemble methods and
+deep learning techniques, the model identifies key success factors such as
+funding stage, founder experience, market trends, and customer
+engagement metrics. The proposed system aims to increase predictive
+accuracy, provide actionable insights, and assist investors, founders, and
+incubators in strategic planning.
 
 **Keywords:** Ensemble Machine Learning, Random Forest, Neural Network, NLP, SHAP, Explainable AI, MLOps, Flask, React, SMOTE.
 

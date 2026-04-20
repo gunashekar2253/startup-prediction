@@ -631,6 +631,38 @@ stateDiagram-v2
 
 ---
 
+graph TB
+    subgraph System["🚀 Startup Success Prediction System"]
+        UC1["Predict Startup Success"]
+        UC2["View Prediction History"]
+        UC3["Manage ML Models"]
+        UC4["Retrain Models"]
+        UC5["Batch Predict Startups"]
+        UC6["Check System Health"]
+        UC7["Fetch Live API Data"]
+        UC8["Auto-Retrain on Schedule"]
+    end
+
+    User["👤 User / Entrepreneur"]
+    Investor["💼 Investor / VC"]
+    Admin["⚙️ Admin / Data Scientist"]
+    Scheduler["⏰ Automated Scheduler"]
+
+    User --> UC1
+    User --> UC2
+    Investor --> UC1
+    Investor --> UC5
+    Admin --> UC3
+    Admin --> UC4
+    Admin --> UC6
+    Scheduler --> UC7
+    Scheduler --> UC8
+
+    UC1 -.->|includes| UC6
+    UC4 -.->|includes| UC3
+    UC8 -.->|includes| UC7
+
+
 > **Note:** All diagrams above use Mermaid syntax. They can be rendered in:
 > - GitHub / GitLab (native support)
 > - VS Code (with Mermaid extension)
